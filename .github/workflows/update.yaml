@@ -3,6 +3,7 @@ name: Update Hosts
 on:
   schedule:
     - cron: "0 13 * * *"
+  workflow_dispatch:  # 新增：允许在 GitHub 界面手动触发
 
 jobs:
   build:
